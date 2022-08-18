@@ -1,6 +1,6 @@
 <?php /*
 
-  This file is part of a child theme called Dev2Infinity.
+  This file is part of a child theme called Build my Universe.
   Functions in this file will be loaded before the parent theme's functions.
   For more information, please read
   https://developer.wordpress.org/themes/advanced-topics/child-themes/
@@ -9,7 +9,7 @@
 
 // this code loads the parent's stylesheet (leave it in place unless you know what you're doing)
 
-function your_theme_enqueue_styles() {
+function bmu_enqueue_styles() {
 
     $parent_style = 'parent-style';
 
@@ -23,7 +23,7 @@ function your_theme_enqueue_styles() {
     );
 }
 
-add_action('wp_enqueue_scripts', 'your_theme_enqueue_styles');
+add_action('wp_enqueue_scripts', 'bmu_enqueue_styles');
 
 /*  Add your own functions below this line.
     ======================================== */ 
